@@ -62,6 +62,11 @@ annotate entity ZMZA_CW_STUDENT with
   @UI:{ lineItem:[ { position: 100, label:'Image' } ],
         identification:[ { position: 100, label:'Image'  } ] }
   zImage;
+  
+  @UI:{ lineItem:[ { position: 110, label:'Status F4' } ],
+        identification:[ { position: 110, label:'Status F4' } ] }
+  @Consumption.valueHelpDefinition: [{ entity: { name: 'ZMZA_DD_DD07T_CUST_TYPE', element: 'Domvalue' } }]
+  StatusF4;
 
 }
 

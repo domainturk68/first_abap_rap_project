@@ -28,7 +28,10 @@ define root view entity ZMZA_DD_STUDENT
       CONCAT_WITH_SPACE( firstname, lastname, 1 ) as FullName,
       
       _StudentStatus,
-      _StudentStatus.Description    as StatusDescription
+      _StudentStatus.Description    as StatusDescription,
+      
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZMZA_DD_DD07T_CUST_TYPE', element: 'Domvalue' } }]
+      statusf4 as StatusF4
 }
 
 //Create a custom table

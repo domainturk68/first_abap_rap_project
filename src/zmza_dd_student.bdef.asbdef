@@ -26,6 +26,7 @@ authorization master ( instance )
       Studentstatus = studentstatus;
       Gender = gender;
       DateOfBirth = dob;
+      StatusF4 = statusf4;
 }
 }
 

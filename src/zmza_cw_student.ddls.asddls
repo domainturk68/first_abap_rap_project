@@ -37,7 +37,9 @@ as projection on ZMZA_DD_STUDENT
     @EndUserText.label: 'İmage'    
     zImage, 
     @EndUserText.label: 'Full Name'   
-    FullName
+    FullName,
+    @EndUserText.label: 'Status F4'
+    StatusF4
 }
 //Create an root projection / Consumptionview on top of root interface view
 //The projection/Consumption view will provide all list of display fields 
