@@ -1,0 +1,17 @@
+projection;
+strict ( 2 );
+
+define behavior for ZMZA_CW_STUDENT alias Student
+{
+  use create;
+  use update;
+  use delete;
+
+  use action SetAdmitted;
+}
+
+//Create Behavior definitionon bothroot interface view
+//and root projection view.
+//The behavior definition on interface view will
+//also need to implement class and mapping to establish
+//connection with table and interface view

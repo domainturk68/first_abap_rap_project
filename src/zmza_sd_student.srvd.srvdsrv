@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definiton'
+define service ZMZA_SD_STUDENT {
+  expose ZMZA_CW_STUDENT;
+}

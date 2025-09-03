@@ -1,0 +1,5 @@
+CLASS zbp_mza_dd_student DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zmza_dd_student.
+ENDCLASS.
+
+CLASS zbp_mza_dd_student IMPLEMENTATION.
+ENDCLASS.

@@ -1,0 +1,5 @@
+@EndUserText.label: 'order service'
+define service Zmza_sd_custom_order {
+  expose zmza_dd_custom_order;
+  expose zmza_dd_custom_order_pos;
+}

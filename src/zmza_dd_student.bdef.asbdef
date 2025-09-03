@@ -1,0 +1,36 @@
+managed implementation in class zbp_mza_dd_student unique;
+strict ( 2 );
+
+define behavior for ZMZA_DD_STUDENT alias Student
+persistent table ZMZA_STUDENT
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field ( numbering: managed, readonly ) Id;
+  action ( features: instance ) SetAdmitted result[1] $self;
+  field ( mandatory ) Course;
+  validation validate_mandatory_fields on save { create; update; }
+
+  mapping for zmza_student{
+      Id = id;
+      FirstName = firstname;
+      LastName = lastname;
+      Age = age;
+      Course = course;
+      Courseduration = courseduration;
+      Studentstatus = studentstatus;
+      Gender = gender;
+      DateOfBirth = dob;
+}
+}
+
+//Create Behavior definitionon bothroot interface view
+//and root projection view.
+//The behavior definition on interface view will
+//also need to implement class and mapping to establish
+//connection with table and interface view
